@@ -1,0 +1,304 @@
+[gd_scene load_steps=5 format=3 uid="uid://byu4jxtwwywl4"]
+
+[ext_resource type="Script" path="res://Scripts/GraphEdit.gd" id="1_om3a5"]
+[ext_resource type="Script" path="res://Scripts/OutputNode.gd" id="2_dduy6"]
+[ext_resource type="Script" path="res://Scripts/SizeOptions.gd" id="3_toyij"]
+[ext_resource type="Texture2D" uid="uid://8gq6f6mx6gop" path="res://Images/icon.png" id="4_jh8l1"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="GraphEdit" type="GraphEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+right_disconnects = true
+snap_distance = 40
+use_snap = false
+connection_lines_curvature = 0.7
+connection_lines_thickness = 4.0
+minimap_enabled = false
+arrange_nodes_button_hidden = true
+script = ExtResource("1_om3a5")
+
+[node name="OutputNode" type="GraphNode" parent="GraphEdit"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 41.0
+offset_top = -285.0
+offset_right = 236.0
+offset_bottom = 255.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+title = "Data Channels"
+position_offset = Vector2(553, 75)
+slot/0/left_enabled = true
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 0.239216, 0.239216, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+slot/1/left_enabled = true
+slot/1/left_type = 0
+slot/1/left_color = Color(0.219608, 0.752941, 0.521569, 1)
+slot/1/left_icon = null
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color(1, 1, 1, 1)
+slot/1/right_icon = null
+slot/1/draw_stylebox = true
+slot/2/left_enabled = true
+slot/2/left_type = 0
+slot/2/left_color = Color(0.215686, 0.419608, 0.643137, 1)
+slot/2/left_icon = null
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color(1, 1, 1, 1)
+slot/2/right_icon = null
+slot/2/draw_stylebox = true
+slot/3/left_enabled = true
+slot/3/left_type = 0
+slot/3/left_color = Color(1, 1, 1, 1)
+slot/3/left_icon = null
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color(1, 1, 1, 1)
+slot/3/right_icon = null
+slot/3/draw_stylebox = true
+script = ExtResource("2_dduy6")
+
+[node name="Control1" type="Control" parent="GraphEdit/OutputNode"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="TextureRect" type="TextureRect" parent="GraphEdit/OutputNode/Control1"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+offset_left = -114.0
+offset_top = 10.0
+offset_right = -23.0
+offset_bottom = 42.0
+expand_mode = 4
+
+[node name="Control2" type="Control" parent="GraphEdit/OutputNode"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="TextureRect" type="TextureRect" parent="GraphEdit/OutputNode/Control2"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+offset_left = -114.0
+offset_right = -23.0
+offset_bottom = 32.0
+expand_mode = 4
+
+[node name="Control3" type="Control" parent="GraphEdit/OutputNode"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="TextureRect" type="TextureRect" parent="GraphEdit/OutputNode/Control3"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 0
+offset_left = -114.0
+offset_top = 5.0
+offset_right = -23.0
+offset_bottom = 37.0
+expand_mode = 4
+
+[node name="Control4" type="Control" parent="GraphEdit/OutputNode"]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="TextureRect" type="TextureRect" parent="GraphEdit/OutputNode/Control4"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 0
+offset_left = -114.0
+offset_top = 12.67
+offset_right = -23.0
+offset_bottom = 44.67
+expand_mode = 4
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+offset_left = 256.0
+offset_top = 13.0
+offset_right = 367.0
+offset_bottom = 44.0
+text = "+ ImageNode"
+
+[node name="ClearAll" type="Button" parent="."]
+layout_mode = 1
+offset_left = 553.0
+offset_top = 12.0
+offset_right = 702.0
+offset_bottom = 43.0
+text = "Clear Connections
+"
+
+[node name="GraphNode" type="GraphNode" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -270.0
+offset_right = -10.0
+grow_horizontal = 0
+grow_vertical = 2
+title = "Output Files"
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color(1, 1, 1, 1)
+slot/1/left_icon = null
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color(1, 1, 1, 1)
+slot/1/right_icon = null
+slot/1/draw_stylebox = true
+slot/2/left_enabled = false
+slot/2/left_type = 0
+slot/2/left_color = Color(1, 1, 1, 1)
+slot/2/left_icon = null
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color(1, 1, 1, 1)
+slot/2/right_icon = null
+slot/2/draw_stylebox = true
+slot/3/left_enabled = false
+slot/3/left_type = 0
+slot/3/left_color = Color(1, 1, 1, 1)
+slot/3/left_icon = null
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color(1, 1, 1, 1)
+slot/3/right_icon = null
+slot/3/draw_stylebox = true
+
+[node name="PreviewButton" type="Button" parent="GraphNode"]
+visible = false
+layout_mode = 2
+text = "Generate Preview"
+
+[node name="TestImage" type="TextureRect" parent="GraphNode"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+expand_mode = 4
+
+[node name="SaveButton" type="Button" parent="GraphNode"]
+visible = false
+layout_mode = 2
+text = "Export Image"
+
+[node name="FileDialog" type="FileDialog" parent="GraphNode/SaveButton"]
+initial_position = 1
+size = Vector2i(800, 400)
+max_size = Vector2i(1024, 400)
+ok_button_text = "Save"
+access = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GraphNode"]
+layout_mode = 2
+alignment = 1
+
+[node name="ExportSize" type="Label" parent="GraphNode/HBoxContainer"]
+layout_mode = 2
+text = "Export Size"
+
+[node name="SizeOptions" type="OptionButton" parent="GraphNode/HBoxContainer"]
+layout_mode = 2
+script = ExtResource("3_toyij")
+
+[node name="Logo" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 68.0
+offset_top = -58.0
+offset_right = -723.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/normal_font_size = 28
+text = "BackPacker
+"
+fit_content = true
+
+[node name="Label" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 772.0
+offset_top = -65.0
+offset_right = 10.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/normal_font_size = 11
+text = "*Data in the alpha channel may create an \"empty\" or transparent final image. Alpha may hide it visually, but the data is still present."
+fit_content = true
+
+[node name="Label2" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = -668.0
+offset_right = -806.0
+offset_bottom = -650.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/normal_font_size = 11
+text = "*Source images must be the same size"
+fit_content = true
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(35.5, 674.5)
+scale = Vector2(0.492188, 0.539062)
+texture = ExtResource("4_jh8l1")
+
+[connection signal="connection_request" from="GraphEdit" to="GraphEdit" method="_on_connection_request"]
+[connection signal="connection_to_empty" from="GraphEdit" to="GraphEdit" method="_on_connection_to_empty"]
+[connection signal="disconnection_request" from="GraphEdit" to="GraphEdit" method="_on_disconnection_request"]
+[connection signal="pressed" from="Button" to="GraphEdit" method="_on_button_pressed"]
+[connection signal="pressed" from="ClearAll" to="GraphEdit" method="_on_clear_all_pressed"]
+[connection signal="pressed" from="GraphNode/PreviewButton" to="GraphEdit/OutputNode" method="_on_preview_button_pressed"]
+[connection signal="pressed" from="GraphNode/SaveButton" to="GraphEdit/OutputNode" method="_on_save_button_pressed"]
+[connection signal="confirmed" from="GraphNode/SaveButton/FileDialog" to="GraphEdit/OutputNode" method="_on_file_dialog_confirmed"]
+[connection signal="item_selected" from="GraphNode/HBoxContainer/SizeOptions" to="GraphEdit/OutputNode" method="_on_size_options_item_selected"]
+[connection signal="item_selected" from="GraphNode/HBoxContainer/SizeOptions" to="GraphNode/HBoxContainer/SizeOptions" method="_on_item_selected"]
