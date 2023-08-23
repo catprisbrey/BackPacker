@@ -1,9 +1,4 @@
- 
-
 ![Logo](https://github.com/pemguin005/BackPacker/blob/main/Images/icon.png?raw=true)
-
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 # BackPacker
 
 A channel packing application for 3D material image files
@@ -30,3 +25,5 @@ _Built in the Godot Game engine, and some icons may still reflect that_
 ## Installation
 
 Just download one of the releases and run it. There is no installation process.
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
