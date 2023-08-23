@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="1080"
-   height="720"
-   viewBox="0 0 285.74999 190.50001"
+   width="350"
+   height="400"
+   viewBox="0 0 92.604166 105.83334"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
@@ -28,24 +28,29 @@
      showgrid="false"
      units="px"
      width="128px"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="612.0009"
-     inkscape:cy="351.43206"
+     inkscape:zoom="0.7071068"
+     inkscape:cx="-55.861434"
+     inkscape:cy="169.70562"
      inkscape:window-width="1920"
      inkscape:window-height="1021"
      inkscape:window-x="0"
      inkscape:window-y="30"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g9021" />
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <defs
      id="defs2" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-104.76164,-52.692187)">
     <g
        id="g9021"
-       transform="matrix(0.88072682,0,0,0.88072682,18.395104,27.753409)">
+       transform="matrix(0.88072682,0,0,0.88072682,26.48968,31.003595)">
       <rect
          style="fill:#ff3d3d;fill-opacity:1;stroke:#000000;stroke-width:4.33133;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
          id="rect1737-5-5-7-3"
@@ -158,14 +163,14 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;line-height:1.25;font-family:'Block Tilt BRK';-inkscape-font-specification:'Block Tilt BRK';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="103.52141"
-       y="151.38303"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;line-height:1.25;font-family:'Block Tilt BRK';-inkscape-font-specification:'Block Tilt BRK';fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="111.61598"
+       y="154.63321"
        id="text10103"><tspan
          sodipodi:role="line"
          id="tspan10101"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:Dyuthi;-inkscape-font-specification:Dyuthi;stroke-width:0.264583;fill:#ffffff;fill-opacity:1"
-         x="103.52141"
-         y="151.38303">BackPacker</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:Dyuthi;-inkscape-font-specification:Dyuthi;fill:#cccccc;fill-opacity:1;stroke-width:0.264583"
+         x="111.61598"
+         y="154.63321">BackPacker</tspan></text>
   </g>
 </svg>
