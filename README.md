@@ -1,6 +1,6 @@
  
 
-![Logo](https://github.com/pemguin005/BackPacker/blob/main/Images/Spalsh.png?raw=true)
+![Logo](https://github.com/pemguin005/BackPacker/blob/main/Images/icon.png?raw=true)
 
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
