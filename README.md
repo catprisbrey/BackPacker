@@ -25,7 +25,7 @@ _Built in the Godot Game engine, some icons may still reflect that_
 - Customize output image size from 8 pixels to 4k resolutions
 - Cross platform for Linux x32, Linux x64, and Windows
 - Self contained application, no installation necessary
-- Entirely Free
+- Entirely Free (Donations accepted at the ![Itch.io page](https://pemguin005.itch.io/backpacker))
 
 
 ## Demo
