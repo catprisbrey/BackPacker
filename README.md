@@ -7,11 +7,11 @@
 
 A channel packing application for 3D material image files
 
-BackPacker is a simple tool designed to simplify the 3D workflow of game developers and 3D artists. BackPacker allows you to pack mulitple PBR image maps into fewer image files by taking advantage of unused, or unnecessary color channels.
+BackPacker is a simple tool designed to simplify the 3D workflow of game developers and 3D artists. BackPacker allows you to pack multiple PBR image maps into fewer image files by taking advantage of unused, or unnecessary color channels.
 
-Import multiple image maps (like roughness, metallic, emission, ambient occulision, normal maps, etc). Drag and drop individual color channels into whatever output channels suits your specifications. You have the flexibility to assign specific red, green, blue, and alpha channels from any of the files to generate into any channel of the output image. This can simplify and reduce how many image maps are required to describe your textures.
+Import multiple image maps (like roughness, metallic, emission, ambient occlusion, normal maps, etc). Drag and drop individual color channels into whatever output channels suits your specifications. You have the flexibility to assign specific red, green, blue, and alpha channels from any of the files to generate into any channel of the output image. This can simplify and reduce how many image maps are required to describe your textures.
 
-Input files must be the same resolution, but output file resoltion can be selected, and scaled larger or smaller as needed.
+Input files must be the same resolution, but output file resolution can be selected, and scaled larger or smaller as needed. 
 
 ![Screenshot](https://github.com/pemguin005/BackPacker/blob/main/Images/Backpacker-stillshot.png?raw=true)
 _Built in the Godot Game engine, some icons may still reflect that_
