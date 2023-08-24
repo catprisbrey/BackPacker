@@ -7,9 +7,9 @@
 
 A channel packing application for 3D material image files
 
-BackPacker is a simple tool designed to simplify the workflow and exploration of game developers and 3D artists. This channel packing application streamlines the process of merging mulitple image map channels into new image files, allowing you to pack and consolidate mulitple PBR image maps into fewer image files.
+BackPacker is a simple tool designed to simplify the 3D workflow of game developers and 3D artists. BackPacker allows you to pack mulitple PBR image maps into fewer image files by taking advantage of unused, or unnecessary color channels.
 
-BackPacker allows you to import multiple 3D image map files, such as albedo, roughness, metallic, emission, ambient occulision, normal maps, etc. Select the channels you want to pack accourding to your own requirements. You have the flexibility to assign specific red, green, blue, and alpha channels from any of the files to generate the consolidated output image. This output image contains all the combined data from each color channel, allowing you to efficiently describe materials within your projects with fewer files.
+Import multiple image maps (like roughness, metallic, emission, ambient occulision, normal maps, etc). Drag and drop individual color channels into whatever output channels uits your specifications. You have the flexibility to assign specific red, green, blue, and alpha channels from any of the files to generate into any channel of the output image. This can simplify and reduce how many image maps are required to describe your textures.
 
 Input files must be the same resolution, but output file resoltion can be selected, and scaled larger or smaller as needed.
 
@@ -18,8 +18,8 @@ _Built in the Godot Game engine, some icons may still reflect that_
 
 ## Features
 
-- Import and merge data from multple image files at once
-- Separately assign each red, green, blue, and alpha channels
+- Import and merge the channels from multple image files at once
+- Separately assign each red, green, blue, and alpha channel
 - Live previews of color channel output
 - Easy node based UI makes for obvious channel mapping
 - Customize output image size from 8 pixels to 4k resolutions
@@ -28,20 +28,16 @@ _Built in the Godot Game engine, some icons may still reflect that_
 - Entirely Free
 
 
-## Installation
-
-Just download one of the releases and run it. There is no installation process.
-
 ## Demo
 
-- Clicking the +ImageNode button adds more nodes for souce images.
-- Drag the color handles and connect them to any output color channel.
-- A channel preview makes it easy to spot what data you're including.
-- You can generate final preview to be sure things look right.
+- Click the +ImageNode button to add more souce images.
+- Drag the color handles and connect them to any output color channel. 
+- Each channel preview makes it easy to view the channel's output.
+- Generate final preview to be sure things look right.
 - Adjust the size as needed and hit the export to save.
 
 ![Demonstration](https://github.com/pemguin005/BackPacker/blob/main/Images/Backpacker-GithubDemo.gif?raw=true)
 
-- Final images may look semi transparent, but don't fret. Each channel contains the complete data, it's only the alpha layer masking some of it visually.
+- Final images may look semi-transparent, but don't fret. Each channel contains the complete data, it's likely the alpha layer is masking the visual colors.
 
 ![Example](https://github.com/pemguin005/BackPacker/blob/main/Images/Brick_packed.png?raw=true)
