@@ -26,21 +26,18 @@ func _ready():
 
 func Show_UploadWindow():
 	file_dialog.show()
-	
-func load_image(path):
-	var new_image = load(path)
-	
-	if new_image:
-		
-		has_image = true
-		texture_rect.texture = new_image
-		set_title(str(path.get_file()))
-		
-	else:
-		has_image = false
-		print("Failed to load image:", path)
-		print("Error code:", new_image)
 
+func load_image(path):
+	var image_path = path
+	var image = Image.new()
+	image.load(image_path)
+	
+	var image_texture = ImageTexture.new()
+	image_texture.set_image(image)
+	has_image = true
+	texture_rect.texture = image_texture
+	set_title(str(path.get_file()))
+	
 func get_color(from_port):
 	var original_image = texture_rect.texture.get_image()
 	var new_image = Image.create(original_image.get_width(), original_image.get_height(), false, Image.FORMAT_RGBA8)

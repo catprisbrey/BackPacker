@@ -13,6 +13,14 @@ grow_vertical = 2
 size_flags_horizontal = 4
 script = ExtResource("1_vywjx")
 
-[node name="LogoImage" type="Sprite2D" parent="."]
-position = Vector2(513, 379)
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LogoImage" type="Sprite2D" parent="AspectRatioContainer"]
+position = Vector2(625, 385)
 texture = ExtResource("1_e75hl")

@@ -19,9 +19,10 @@ config/windows_native_icon="res://Images/icon.ico"
 
 [display]
 
-window/size/viewport_width=1024
+window/size/viewport_width=1280
 window/size/viewport_height=720
 
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
+limits/size/viewport_width=1024
