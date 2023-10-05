@@ -1,8 +1,1 @@
-res://splash.tscn
-res://Scripts/GraphEdit.gd
 res://main.tscn
-res://InputNode.tscn
-res://Scripts/InputNode.gd
-res://Scripts/OutputNode.gd
-res://Scripts/SizeOptions.gd
-res://Scripts/splash.gd
