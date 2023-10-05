@@ -3,6 +3,8 @@ extends GraphEdit
 @onready var output_node = $OutputNode
 
 var new_source_node = load("res://InputNode.tscn")
+var last_source_path
+
 var initial_position = Vector2(15,40)
 var counter = 1
 
@@ -30,7 +32,13 @@ func _on_button_pressed():
 	var new_node = new_source_node.instantiate()
 	new_node.position_offset += new_offset
 	add_child(new_node)
-
+	await get_tree().process_frame
+	## Added feature to assign the file dialog path to the last path used.
+	var new_file_dialog = new_node.get_node("Button/FileDialog")
+	new_file_dialog.connect("file_selected",_Remember_Source_Path)
+	if last_source_path:
+		new_file_dialog.current_path = last_source_path
+		
 
 func _on_disconnection_request(from_node, from_port, to_node, to_port):
 	disconnect_node(from_node,from_port,to_node,to_port)
@@ -44,3 +52,7 @@ func _on_clear_all_pressed():
 	output_node.clear_image(1)
 	output_node.clear_image(2)
 	output_node.clear_image(3)
+
+func _Remember_Source_Path(last_path):
+	last_source_path = last_path
+	print(str(last_path) + "this connection worked")

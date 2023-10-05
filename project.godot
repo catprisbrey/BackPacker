@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="BackPacker"
+config/description="A channel packing application for 3D material image files
+
+BackPacker is a simple tool designed to simplify the 3D workflow of game developers and 3D artists. BackPacker allows you to pack multiple PBR image maps into fewer image files by taking advantage of unused, or unnecessary color channels. "
 run/main_scene="res://splash.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
+run/max_fps=30
+run/low_processor_mode=true
 boot_splash/show_image=false
 config/icon="res://Images/icon.svg"
 config/windows_native_icon="res://Images/icon.ico"
@@ -21,6 +26,10 @@ config/windows_native_icon="res://Images/icon.ico"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+
+[physics]
+
+common/physics_ticks_per_second=30
 
 [rendering]
 

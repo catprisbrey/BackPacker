@@ -31,7 +31,7 @@ var green
 var blue
 var alpha
 
-func _process(delta):
+func _process(_delta):
 	if (red_ready == true \
 		&& green_ready == true \
 		&& blue_ready == true \

@@ -6,6 +6,9 @@ extends GraphNode
 @onready var texture_rect = $Button/TextureRect
 @onready var file_dialog = $Button/FileDialog
 
+signal last_source_path
+var last_path
+
 var has_image = false
 var port1 = []
 var port2 = []
@@ -17,7 +20,6 @@ func _ready():
 	
 	button.connect("pressed",Show_UploadWindow)
 	file_dialog.connect("file_selected",load_image)
-#
 	var new_image = Image.create(256,256, false, Image.FORMAT_RGBA8)
 	new_image.fill(Color(1,1,1,0))
 	var image_texture = ImageTexture.create_from_image(new_image)
@@ -25,6 +27,9 @@ func _ready():
 	
 
 func Show_UploadWindow():
+	if last_path:
+		print("i have a last path")
+		file_dialog.current_file = last_path
 	file_dialog.show()
 
 func load_image(path):
@@ -37,6 +42,7 @@ func load_image(path):
 	has_image = true
 	texture_rect.texture = image_texture
 	set_title(str(path.get_file()))
+	
 	
 func get_color(from_port):
 	var original_image = texture_rect.texture.get_image()
@@ -86,4 +92,3 @@ func connection_info(from_node, from_port, to_node, to_port):
 func disconnect_port(port_number):
 	if port_number != []:
 		parent._on_disconnection_request(port_number[0],port_number[1],port_number[2],port_number[3])
-
