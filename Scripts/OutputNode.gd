@@ -99,7 +99,12 @@ func create_combined_image(red_image: Image, green_image: Image, blue_image: Ima
 
 
 func _on_preview_button_pressed():
-	var final_image = create_combined_image(red.get_image(),green.get_image(),blue.get_image(),alpha.get_image())
+	var final_image = create_combined_image(
+		red.get_image(),
+		green.get_image(),
+		blue.get_image(),
+		alpha.get_image()
+		)
 	test_image.texture = final_image
 
 
@@ -114,7 +119,12 @@ func _on_file_dialog_confirmed():
 	if test_image.texture:
 		test_image.texture.get_image().save_png(save_path)
 	else:
-		var final_image = create_combined_image(red.get_image(),green.get_image(),blue.get_image(),alpha.get_image())
+		var final_image = create_combined_image(
+			red.get_image(),
+			green.get_image(),
+			blue.get_image(),
+			alpha.get_image()
+			)
 		final_image.get_image().save_png(save_path)
 		
 

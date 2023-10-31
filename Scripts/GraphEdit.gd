@@ -8,8 +8,8 @@ var last_source_path
 var initial_position = Vector2(15,40)
 var counter = 1
 
-func _ready():
-	_on_button_pressed()
+#func _ready():
+#	_on_button_pressed()
 
 func _on_connection_request(from_node, from_port, to_node, to_port):
 	var source_node = get_node(str(from_node))

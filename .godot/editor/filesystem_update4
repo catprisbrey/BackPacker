@@ -1,1 +1,5 @@
 res://main.tscn
+res://Scripts/OutputNode.gd
+res://Scripts/GraphEdit.gd
+res://splash.tscn
+res://InputNode.tscn

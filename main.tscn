@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://byu4jxtwwywl4"]
+[gd_scene load_steps=6 format=3 uid="uid://byu4jxtwwywl4"]
 
 [ext_resource type="Script" path="res://Scripts/GraphEdit.gd" id="1_om3a5"]
 [ext_resource type="Script" path="res://Scripts/OutputNode.gd" id="2_dduy6"]
 [ext_resource type="Script" path="res://Scripts/SizeOptions.gd" id="3_toyij"]
 [ext_resource type="Texture2D" uid="uid://8gq6f6mx6gop" path="res://Images/icon.png" id="4_jh8l1"]
+[ext_resource type="PackedScene" uid="uid://ecf064iwl0bg" path="res://InputNode.tscn" id="5_5qo56"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -292,6 +293,34 @@ fit_content = true
 position = Vector2(35.5, 674.5)
 scale = Vector2(0.492188, 0.539062)
 texture = ExtResource("4_jh8l1")
+
+[node name="InputNode" parent="." instance=ExtResource("5_5qo56")]
+layout_mode = 1
+offset_left = 80.0
+offset_top = 98.0
+offset_right = 207.0
+offset_bottom = 251.0
+
+[node name="InputNode2" parent="." instance=ExtResource("5_5qo56")]
+layout_mode = 1
+offset_left = 230.0
+offset_top = 218.0
+offset_right = 357.0
+offset_bottom = 371.0
+
+[node name="InputNode3" parent="." instance=ExtResource("5_5qo56")]
+layout_mode = 1
+offset_left = 80.0
+offset_top = 342.0
+offset_right = 207.0
+offset_bottom = 495.0
+
+[node name="InputNode4" parent="." instance=ExtResource("5_5qo56")]
+layout_mode = 1
+offset_left = 230.0
+offset_top = 489.0
+offset_right = 357.0
+offset_bottom = 642.0
 
 [connection signal="connection_request" from="GraphEdit" to="GraphEdit" method="_on_connection_request"]
 [connection signal="connection_to_empty" from="GraphEdit" to="GraphEdit" method="_on_connection_to_empty"]
